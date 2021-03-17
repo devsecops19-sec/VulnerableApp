@@ -17,8 +17,9 @@ jobs:
         sudo mv gitleaks /usr/local/bin/
         gitleaks --version
         pwd
+        ls
         ls -ltr
-        gitleaks --path=. --config-path=./gitleaks-back.toml --report=scan.json --leaks-exit-code=0
-        cat scan.json
+        gitleaks --path=. --config-path=gitleaks-back.toml --report=scan.json --leaks-exit-code=0
+        
       shell: bash
                     
